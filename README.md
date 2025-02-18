@@ -37,7 +37,8 @@ rename_tool_UI.rename_tool()
 - **Quick Selection**<br/>
   Select specific elements within your current selection
   > Ideally, the quick selection is used to filter certain elements when the user has selected all elements from the `Outliner`<br/>
-  > Adding this feature because selecting from the `Viewport` usually ends up only selecting the joints (if the selection settings were not adjusted)
+  > Adding this feature because selecting from the `Viewport` usually ends up only selecting the joints (if the selection settings were not adjusted)<br/>
+  > `select hierarchy` button is mainly made for joint selection since most of the time only the parent joint gets selected from the `viewport`
 
 - **Suffix and Prefix**<br/>
   Customizing names and adding it as prefix or suffix
