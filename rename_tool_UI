@@ -413,4 +413,4 @@ class rename_tool(object):
 
 
 #IN Maya
-#rename_tool_UI.rename_tool()
+rename_tool_UI.rename_tool()
