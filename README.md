@@ -3,7 +3,10 @@
 
 ![UI](https://github.com/user-attachments/assets/77afc9e7-4326-41e1-b89d-7e0f52276cbe)
 
-![UI_expand](https://github.com/user-attachments/assets/ed23175b-fbc1-411b-8c23-3ffce8d18b2a)
+Also have a quick tutorial on Youtube:<br/>
+  <a href="https://www.youtube.com/watch?v=ggXCXy8W468"><img src="https://img.youtube.com/vi/ggXCXy8W468/0.jpg" alt="IMAGE ALT TEXT"></a><br/>
+  https://www.youtube.com/watch?v=ggXCXy8W468
+<br/>
 
 A personal project of creating a Maya tool to rename multiple elements back in 2022/2023.<br/>
 Perfect for my character rig that has "too many fingers."<br/>
@@ -15,7 +18,7 @@ Select all and middle-mouse-button drag the code to the desired shelf for quick 
 
 <br/>----------<br/>
 
-Or the harder but more tidier way:<br/>
+Or the slower but more tidier way:<br/>
 1. Delete or comment out the last line at the end of the code
 ```
 #IN Maya
@@ -36,9 +39,8 @@ rename_tool_UI.rename_tool()
 
 - **Quick Selection**<br/>
   Select specific elements within your current selection
-  > Ideally, the quick selection is used to filter certain elements when the user has selected all elements from the `Outliner`<br/>
-  > Adding this feature because selecting from the `Viewport` usually ends up only selecting the joints (if the selection settings were not adjusted)<br/>
-  > `select hierarchy` button is mainly made for joint selection since most of the time only the parent joint gets selected from the `viewport`
+  > Ideally, the quick selection is used to filter certain elements within a group<br/>
+  > `select hierarchy` button is mainly made for adding the side to elements in the group or for joint selection, since most of the time only the parent joint gets selected from the `viewport`
 
 - **Suffix and Prefix**<br/>
   Customizing names and adding it as prefix or suffix
@@ -52,6 +54,7 @@ rename_tool_UI.rename_tool()
   
 - **Rename**<br/>
   Specify a certain name and decide how the elements should be sorted in
+  If more than one element is selected but an order isn't selected (the `-` option from the dropdown menu), the new names would follow Maya's default order system
   > `Numeric_0` order would add the number `0` at the end of the first selected element, while `Numeric_1` begins with `1`<br/>
   > `Alphabetic` is a two-letter-based system that would run from `A` to `Z` and continue with `AA`, `AB`, `AC`, ... `ZZ`<br/>
   >> ***Consider a different way of labeling if you have more than `676`(26^2) elements selected**
