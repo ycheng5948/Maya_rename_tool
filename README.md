@@ -12,11 +12,12 @@ A personal project of creating a Maya tool to rename multiple elements back in 2
 Perfect for my character rig that has "too many fingers."<br/>
 Also a great practice for me to build a UI in Maya so it's easier to navigate and looks prettier. ¯\\\_(ツ)\_/¯
 
+## Setting Up
 Fastest way:<br/>
-Simply copy and paste the code to a new tab in Maya Script Editor.<br/>
-Select all and middle-mouse-button drag the code to the desired shelf for quick access.
+Simply copy and paste the code to a new tab in Maya Script Editor<br/>
+Select all and middle-mouse-button drag the code to the desired shelf for quick access
 
-<br/>----------<br/>
+----------<br/>
 
 Or the slower but more tidier way:<br/>
 1. Delete or comment out the last line at the end of the code
@@ -25,15 +26,16 @@ Or the slower but more tidier way:<br/>
 rename_tool_UI.rename_tool() #comment this line out
 ```
 
-2. Create a `rename_tool_UI.py` file and place it in your desired script folder, which might look a bit like: 
+2. Create a `rename_tool_UI.py` file and place it in your desired script folder, which might look a bit like: <br/>
 `C:\Users\user\Documents\maya\$MAYA_VERSION\scripts\$SCRIPT_FOLDER\rename_tool_UI.py`<br/>
-3. In Maya Script editor, type or copy and paste the following:
+
+3. In Maya Script editor, type or copy and paste the following:<br/>
 ```
 from $SCRIPT_FOLDER import rename_tool_UI
 rename_tool_UI.rename_tool()
 ```
 > Make sure that the `$SCRIPT_FOLDER` has been changed to whatever you've named your script folder<br/>
-> Remember to run `reload(rename_tool_UI)` in Maya Script Editor if you made any changes to the .py file
+> Remember to run `reload(rename_tool_UI)` in Maya Script Editor if you made any changes to the `.py` file
 
 ## Features
 
@@ -53,7 +55,7 @@ rename_tool_UI.rename_tool()
   Adding common suffixes for the selected element(s)
   
 - **Rename**<br/>
-  Specify a certain name and decide how the elements should be sorted in
+  Specify a certain name and decide how the elements should be sorted in<br/>
   If more than one element is selected but an order isn't selected (the `-` option from the dropdown menu), the new names would follow Maya's default order system
   > `Numeric_0` order would add the number `0` at the end of the first selected element, while `Numeric_1` begins with `1`<br/>
   > `Alphabetic` is a two-letter-based system that would run from `A` to `Z` and continue with `AA`, `AB`, `AC`, ... `ZZ`<br/>
