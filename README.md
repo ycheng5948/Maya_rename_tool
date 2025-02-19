@@ -32,7 +32,7 @@ rename_tool_UI.rename_tool() #comment this line out
 from $SCRIPT_FOLDER import rename_tool_UI
 rename_tool_UI.rename_tool()
 ```
-> Make sure that the `$SCRIPT_FOLDER` has been changed to whatever you've named your script folder
+> Make sure that the `$SCRIPT_FOLDER` has been changed to whatever you've named your script folder<br/>
 > Remember to run `reload(rename_tool_UI)` in Maya Script Editor if you made any changes to the .py file
 
 ## Features
@@ -40,7 +40,7 @@ rename_tool_UI.rename_tool()
 - **Quick Selection**<br/>
   Select specific elements within your current selection
   > Ideally, the quick selection is used to filter certain elements within a group<br/>
-  > `select hierarchy` button is mainly made for adding the side to elements in the group or for joint selection, since most of the time only the parent joint gets selected from the `viewport`
+  > `select hierarchy` button is mainly made for adding the side to elements in the group or for joint selection since most of the time only the parent joint gets selected from the `viewport`
 
 - **Suffix and Prefix**<br/>
   Customizing names and adding it as prefix or suffix
@@ -60,4 +60,4 @@ rename_tool_UI.rename_tool()
   >> ***Consider a different way of labeling if you have more than `676`(26^2) elements selected**
 
 - **Check**<br/>
-  Check the desired name before hitting `Rename`
+  To check the desired name before hitting `Rename`
